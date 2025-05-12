@@ -194,6 +194,56 @@ src/
 └── index.css           # 全局样式 | Global styles
 ```
 
+## Docker 使用指南 | Docker Usage Guide
+
+### 中文说明
+
+#### 使用 Docker 运行
+
+您可以使用 Docker 一键运行此应用：
+
+```bash
+# 构建并运行 Docker 容器
+docker build -t deepseek-streaming-demo .
+docker run -p 8080:80 deepseek-streaming-demo
+```
+
+应用将在 http://localhost:8080 启动。
+
+#### 使用 Docker Compose 运行
+
+如果您安装了 Docker Compose，可以更简单地运行：
+
+```bash
+docker-compose up -d
+```
+
+应用同样将在 http://localhost:8080 启动。
+
+### English Instructions
+
+#### Run with Docker
+
+You can run this application with a single Docker command:
+
+```bash
+# Build and run Docker container
+docker build -t deepseek-streaming-demo .
+docker run -p 8080:80 deepseek-streaming-demo
+```
+
+The application will be available at http://localhost:8080.
+
+#### Run with Docker Compose
+
+If you have Docker Compose installed, you can run it even more easily:
+
+```bash
+docker-compose up -d
+```
+
+The application will also be available at http://localhost:8080.
+
 ## 许可证 | License
 
 MIT
@@ -204,3 +254,5 @@ MIT
 - [React](https://reactjs.org/) - 用户界面库 | UI library
 - [Tailwind CSS](https://tailwindcss.com/) - CSS 框架 | CSS framework
 - [Vite](https://vitejs.dev/) - 构建工具 | Build tool
+- [Docker](https://www.docker.com/) - 容器化平台 | Containerization platform
+- [Nginx](https://nginx.org/) - Web服务器 | Web server
