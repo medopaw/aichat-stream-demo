@@ -198,14 +198,24 @@ src/
 
 ### 中文说明
 
-#### 使用 Docker 运行
+#### 直接从 Docker Hub 运行（无需克隆仓库）
 
-您可以使用 Docker 一键运行此应用：
+您可以直接从 Docker Hub 拉取并运行此应用，无需克隆代码仓库：
+
+```bash
+docker run -p 8080:80 medopaw/aichat-stream-demo
+```
+
+应用将在 http://localhost:8080 启动。
+
+#### 从源代码构建并运行
+
+如果您想从源代码构建：
 
 ```bash
 # 构建并运行 Docker 容器
-docker build -t deepseek-streaming-demo .
-docker run -p 8080:80 deepseek-streaming-demo
+docker build -t aichat-stream-demo .
+docker run -p 8080:80 aichat-stream-demo
 ```
 
 应用将在 http://localhost:8080 启动。
@@ -222,14 +232,24 @@ docker-compose up -d
 
 ### English Instructions
 
-#### Run with Docker
+#### Run directly from Docker Hub (no need to clone repository)
 
-You can run this application with a single Docker command:
+You can pull and run this application directly from Docker Hub without cloning the code repository:
+
+```bash
+docker run -p 8080:80 medopaw/aichat-stream-demo
+```
+
+The application will be available at http://localhost:8080.
+
+#### Build and run from source code
+
+If you want to build from source:
 
 ```bash
 # Build and run Docker container
-docker build -t deepseek-streaming-demo .
-docker run -p 8080:80 deepseek-streaming-demo
+docker build -t aichat-stream-demo .
+docker run -p 8080:80 aichat-stream-demo
 ```
 
 The application will be available at http://localhost:8080.

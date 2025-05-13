@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    image: aichat-stream-demo
     ports:
       - "8080:80"
     restart: unless-stopped
