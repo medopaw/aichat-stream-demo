@@ -101,7 +101,7 @@ const ResponseDisplay: React.FC<ResponseDisplayProps> = ({ response, isStreaming
         )}
       </div>
       {rawData && (
-        <div 
+        <div
           ref={rawDataRef}
           className="border-t border-gray-200 mt-3 max-h-[200px] overflow-y-auto"
         >

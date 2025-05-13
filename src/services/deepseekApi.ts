@@ -55,7 +55,7 @@ export const streamDeepSeekResponse = async (
 
     const reader = response.body.getReader();
     const decoder = new TextDecoder('utf-8');
-    
+
     // Process the stream
     while (true) {
       const { done, value } = await reader.read();
@@ -63,10 +63,10 @@ export const streamDeepSeekResponse = async (
         onComplete();
         break;
       }
-      
+
       // Decode the chunk
       const chunk = decoder.decode(value);
-      
+
       // Process SSE format - each line starts with "data: "
       const lines = chunk.split('\n');
       for (const line of lines) {
@@ -74,12 +74,11 @@ export const streamDeepSeekResponse = async (
         if (trimmedLine.startsWith('data: ')) {
           const jsonData = trimmedLine.substring(6);
           onRawData(line);
-          
+
           // Handle the special "[DONE]" message that signals the end of the stream
           if (jsonData.trim() === '[DONE]') {
             continue;
           }
-          
           try {
             // Accumulate JSON data until we have a complete object
             buffer += jsonData;

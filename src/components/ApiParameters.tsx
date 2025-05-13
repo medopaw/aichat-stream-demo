@@ -53,7 +53,6 @@ const ApiParameters: React.FC<ApiParametersProps> = ({
   onInvalid,
 }) => {
   const { t } = useLanguage();
-  
   return (
     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200 mb-4">
       <div className="flex items-center gap-2 mb-3">

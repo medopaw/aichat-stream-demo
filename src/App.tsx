@@ -62,7 +62,7 @@ function App() {
         <Header />
         <main className="max-w-4xl mx-auto px-4 py-8">
           <ApiKeyInput onApiKeyChange={setApiKey} />
-          
+
           <ApiParameters
             maxTokens={maxTokens}
             temperature={temperature}
@@ -70,13 +70,13 @@ function App() {
             onTemperatureChange={setTemperature}
             onInvalid={(message) => showNotification(message, 'error')}
           />
-          
+
           <ChatInput
             onSendMessage={handleSendMessage}
             isWaitingForResponse={isStreaming}
           />
-          
-          <ResponseDisplay 
+
+          <ResponseDisplay
             response={response}
             isStreaming={isStreaming}
             rawData={rawData}
