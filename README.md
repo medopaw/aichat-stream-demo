@@ -61,7 +61,7 @@ yarn dev
 pnpm dev
 ```
 
-应用将在 http://localhost:5173 启动。
+应用将在 http://localhost:5173 启动（这是Vite开发服务器的默认端口）。
 
 ### 使用方法
 
@@ -146,7 +146,7 @@ yarn dev
 pnpm dev
 ```
 
-The application will start at http://localhost:5173.
+The application will start at http://localhost:5173 (this is the default port for the Vite development server).
 
 ### Usage
 
@@ -206,7 +206,7 @@ src/
 docker run -p 8080:80 medopaw/aichat-stream-demo
 ```
 
-应用将在 http://localhost:8080 启动。
+应用将在 http://localhost:8080 启动（Docker容器中的Nginx服务器端口映射）。
 
 #### 从源代码构建并运行
 
@@ -218,7 +218,7 @@ docker build -t aichat-stream-demo .
 docker run -p 8080:80 aichat-stream-demo
 ```
 
-应用将在 http://localhost:8080 启动。
+应用将在 http://localhost:8080 启动（Docker容器中的Nginx服务器端口映射）。
 
 #### 使用 Docker Compose 运行
 
@@ -228,7 +228,7 @@ docker run -p 8080:80 aichat-stream-demo
 docker-compose up -d
 ```
 
-应用同样将在 http://localhost:8080 启动。
+应用同样将在 http://localhost:8080 启动（Docker容器中的Nginx服务器端口映射）。
 
 ### English Instructions
 
@@ -240,7 +240,7 @@ You can pull and run this application directly from Docker Hub without cloning t
 docker run -p 8080:80 medopaw/aichat-stream-demo
 ```
 
-The application will be available at http://localhost:8080.
+The application will be available at http://localhost:8080 (port mapping from Nginx server in Docker container).
 
 #### Build and run from source code
 
@@ -252,7 +252,7 @@ docker build -t aichat-stream-demo .
 docker run -p 8080:80 aichat-stream-demo
 ```
 
-The application will be available at http://localhost:8080.
+The application will be available at http://localhost:8080 (port mapping from Nginx server in Docker container).
 
 #### Run with Docker Compose
 
@@ -262,7 +262,7 @@ If you have Docker Compose installed, you can run it even more easily:
 docker-compose up -d
 ```
 
-The application will also be available at http://localhost:8080.
+The application will also be available at http://localhost:8080 (port mapping from Nginx server in Docker container).
 
 ## 许可证 | License
 
